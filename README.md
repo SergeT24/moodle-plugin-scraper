@@ -2,6 +2,8 @@
 
 Chrome extension to export the list of additional Moodle plugins (`/admin/plugins.php`) as TXT or PDF.
 
+<img width="334" height="372" alt="Capture d'écran 2025-10-23 163258" src="https://github.com/user-attachments/assets/a890d49a-09f8-4200-884b-8b8c21a56b8e" />
+
 ---
 
 ## Features
@@ -19,6 +21,7 @@ Chrome extension to export the list of additional Moodle plugins (`/admin/plugin
    - **Simple version [TXT]** → exports a plain text list  
    - **Advanced version [PDF]** → exports a detailed PDF table  
 4. The file will be automatically downloaded to your computer.
+
 
 ---
 
