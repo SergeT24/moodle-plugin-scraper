@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Plugin Scraper",
+  "description": "Chrome extension for Moodle administrators to quickly export the additional plugins list from admin/plugins.php to txt or pdf",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab", "downloads","storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/admin/plugins.php"],
+      "js": ["popup.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "libs/jspdf.umd.min.js",
+        "libs/jspdf.plugin.autotable.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
