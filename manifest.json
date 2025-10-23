@@ -4,6 +4,9 @@
   "description": "Chrome extension for Moodle administrators to quickly export the additional plugins list from admin/plugins.php to txt or pdf",
   "version": "1.0",
   "permissions": ["scripting", "activeTab", "downloads","storage", "tabs"],
+  "host_permissions": [
+    "*://*/admin/plugins.php*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
