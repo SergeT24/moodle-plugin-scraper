@@ -53,4 +53,4 @@ You can install the extension manually in Chrome by following these steps:
 
 ## Credits
 
-Icon: Freepik - Flaticon (https://www.flaticon.com/fr/icones-gratuites/aimant" title="aimant icônes")
+Icon: Freepik - Flaticon https://www.flaticon.com/fr/icones-gratuites/aimant
