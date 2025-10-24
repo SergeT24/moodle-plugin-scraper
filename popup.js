@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           await chrome.scripting.executeScript({
             target: { tabId },
             func: scrapePlugins,
-            args: [type, languageSelect.value]
+            args: [type, languageSelect.value,i18n]
           });
 
           statusEl.textContent = i18n[languageSelect.value].extraction_done;
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * Main function executed inside the Moodle page context.
  * It scrapes the plugins table and triggers the file download.
  */
-function scrapePlugins(type,lang) {
+function scrapePlugins(type, lang, i18n) {
 
 
  /**
